@@ -16,4 +16,6 @@ async function checkPassword() {
   }
 }
 
-window.onload = checkPassword;
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(checkPassword, 100); // slight delay improves prompt reliability
+});
